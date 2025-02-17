@@ -3,7 +3,7 @@ pipeline{
         jdk "JAVA_HOME"
         maven "MAVEN_HOME"
     }
-	agent Any
+	agent any
 	stages{
 		stage('git clone'){
 	steps{
