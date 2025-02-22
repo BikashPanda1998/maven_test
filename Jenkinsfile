@@ -12,19 +12,19 @@ pipeline{
 	}
 	stage('compile'){
 	steps{
-	sh 'mvn compile'
+	bat 'mvn compile'
     echo 'compile completed successfully'	
     	}
 	}
 	stage('test'){
 	steps{
-        sh 'mvn test'
+        bat 'mvn test'
 	echo 'test completed successfully'
 		}
 	}
 	stage('package'){
 	steps{
-        sh 'mvn package'
+        bat 'mvn package'
 	echo 'package completed successfully'
 		}
 	}
